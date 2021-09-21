@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [View Code](https://your-solution-url.com)
-- Live Site URL: [Preview Site](https://your-live-site-url.com)
+- Solution URL: [View Code](https://github.com/abhinav-gif/Stats-preview-card-component)
+- Live Site URL: [Preview Site](https://abhinav-gif.github.io/Stats-preview-card-component/)
 
 ## My process
 
