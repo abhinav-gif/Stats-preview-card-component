@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+html,body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color:hsl(233, 47%, 7%);
+	font-size: 15px;
+	font-family: 'Inter', sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+}
+
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 75vw;
+	max-height: calc(2000px - 20vw);
+	padding: 0;
+	background-color: hsl(244, 38%, 16%);
+	border-radius: 0.5rem;
+	overflow: hidden;
+	margin-top: auto;
+}
+
+.bold{
+	font-family: 'Lexend Deca', sans-serif;
+	color: hsl(0, 0%, 100%);
+	font-weight: 400;
+	font-size: 1.2rem;
+	letter-spacing: 1px;
+}
+
+.stats{
+	letter-spacing: 2px;
+	font-size: 0.55rem;
+	margin-top:-1rem ;
+}
+
+.left >p{
+	text-align: left;
+	padding-left: 1rem;
+	padding-right: 15%;
+	line-height: 1.5rem;
+	margin-top: -1.5rem;
+	margin-right: 2rem;
+}
+
+.left{
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 4rem;
+	width: 70rem;
+}
+
+p{
+	color: hsla(0, 0%, 100%, 0.6);
+}
+
+span{
+	color: hsl(277, 64%, 61%);
+}
+
+h1{
+	color: hsl(0, 0%, 100%);
+	padding-left: 1rem;
+	margin-top: 2rem;
+	margin-right: 2rem;
+	font-size: 2.3rem;
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+.bottom-box{
+	text-transform: uppercase;
+}
+
+img{
+	height:100%;
+	width: 100%;
+}
+
+.right{
+	height: 100%;
+	width: 80rem;
+	position: relative;
+}
+
+.right::after{
+	content: "";
+	position: absolute;
+	background-color: hsl(277, 64%, 61%);
+	opacity: 1;
+	mix-blend-mode: multiply;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.bottom-content{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding-left: 1rem;
+	padding-right: 20%;
+}
+
+.mid{
+	margin: 0 3rem;
+}
+
+.attribution { 
+	font-size: 11px; 
+	text-align: center;
+	color: hsl(0, 0%, 100%);
+	margin-top: auto;
+	margin-bottom: 10px;
+}
+.attribution a {
+	color: hsl(277, 64%, 61%);
+	font-size: 13px; 
+}
+
+@media only screen and (max-width: 1100px){
+	main{
+		height: calc(750px - 30vw);
+	}
+}
+
+@media only screen and (max-width: 950px){
+	main{
+		height: calc(750px - 35vw);
+	}
+}
+
+@media only screen and (max-width: 870px){
+	body{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.05rem;
+	}
+
+	h1{
+		font-size: 1.5em;
+		padding: 0;
+		margin: 0;
+	}
+
+	.left >p{
+		text-align: center;
+		font-size: 0.8em;
+		margin: 0;
+		padding: 0;
+	}
+	main,.left{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+	main{
+		height: 80vh;
+		width: 90vw;
+	}
+	.right{
+		order: -1;
+		width: 100%;
+		height: 30%;
+	}
+	.left{
+		text-align: center;!important
+		height: 70%;
+		width: 100%;
+		padding: 0 1rem;
+	}
+	.bottom-content{
+		margin:0;
+		padding: 0;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
